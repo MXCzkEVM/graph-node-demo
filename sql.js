@@ -1,0 +1,8 @@
+
+
+{
+  storeNumbers {
+    id
+    name
+  }
+}

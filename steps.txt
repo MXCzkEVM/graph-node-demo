@@ -1,0 +1,39 @@
+deploy contract
+
+[init]
+graph init --from-contract 0x277Ae3A3d5c88563263163790a1baFDDd304a0e9 --network mainnet --abi abis/simpleStorage.json simpleStorage/First --start-block 1292313
+
+✔ Protocol · ethereum
+✔ Product for which to initialize · hosted-service
+✔ Subgraph name · simpleStorage/First
+✔ Directory to create the subgraph in · subgraph/simpeStorage
+? Ethereum network …
+✔ Ethereum network · mainnet
+✔ Contract address · 0x277Ae3A3d5c88563263163790a1baFDDd304a0e9
+✖ Failed to fetch ABI from Etherscan: connect ETIMEDOUT 199.59.148.20:443
+✔ ABI file (path) · abis/simpleStorage.json
+✔ Start Block · 1292313
+✔ Contract Name · SimpleStorage
+✔ Index contract events as entities (Y/n) · true
+Generate subgraph
+Write subgraph to directory
+✔ Create subgraph scaffold
+✔ Initialize networks config
+✔ Initialize subgraph repository
+✔ Install dependencies with yarn
+✔ Generate ABI and schema types with yarn codegen
+Add another contract? (y/n):
+Subgraph simpleStorage/First created in First
+
+[build the subgraph]
+cd subgraph/simpeStorage
+graph codegen && graph build
+
+[registe && deploy]
+registe
+graph create simpleStore/First --node http://45.63.52.231:8020
+if want remove
+graph remove simpleStore/First --node http://45.63.52.231:8020
+
+deploy
+graph deploy simpleStore/First --ipfs http://45.63.52.231:5001 --node http://45.63.52.231:8020
