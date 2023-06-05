@@ -29,11 +29,22 @@ Subgraph simpleStorage/First created in First
 cd subgraph/simpeStorage
 graph codegen && graph build
 
-[registe && deploy]
+[registe]
 registe
 graph create simpleStore/First --node http://45.63.52.231:8020
 if want remove
 graph remove simpleStore/First --node http://45.63.52.231:8020
 
-deploy
+[deploy]
 graph deploy simpleStore/First --ipfs http://45.63.52.231:5001 --node http://45.63.52.231:8020
+
+Build completed: QmVDeMcPt7WP2Z2a5B4Md1NrEtMSSwQsgNsAFxEZyD4DAE
+Deployed to http://45.63.52.231:8000/subgraphs/name/simpleStore/First/graphql
+Subgraph endpoints:
+Queries (HTTP):     http://45.63.52.231:8000/subgraphs/name/simpleStore/First
+
+
+[websit mapping]
+mxc-graph-node.mxc.com  	 http://45.63.52.231:8000
+mxc-graph-node.mxc.com/node  http://45.63.52.231:8020
+mxc-graph-node.mxc.com/ipfs  http://45.63.52.231:5001
