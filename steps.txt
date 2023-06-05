@@ -31,20 +31,16 @@ graph codegen && graph build
 
 [registe]
 registe
-graph create simpleStore/First --node http://45.63.52.231:8020
+graph create simpleStore/First --node mxc-graph-node.mxc.com:8020
 if want remove
-graph remove simpleStore/First --node http://45.63.52.231:8020
+graph remove simpleStore/First --node mxc-graph-node.mxc.com:8020
 
 [deploy]
-graph deploy simpleStore/First --ipfs http://45.63.52.231:5001 --node http://45.63.52.231:8020
+graph deploy simpleStore/First --ipfs mxc-graph-node.mxc.com:5001 --node mxc-graph-node.mxc.com:8020
 
 Build completed: QmVDeMcPt7WP2Z2a5B4Md1NrEtMSSwQsgNsAFxEZyD4DAE
-Deployed to http://45.63.52.231:8000/subgraphs/name/simpleStore/First/graphql
+Deployed to mxc-graph-node.mxc.com/subgraphs/name/simpleStore/First/graphql
 Subgraph endpoints:
-Queries (HTTP):     http://45.63.52.231:8000/subgraphs/name/simpleStore/First
+Queries (HTTP):     mxc-graph-node.mxc.com/subgraphs/name/simpleStore/First
 
 
-[websit mapping]
-mxc-graph-node.mxc.com  	 http://45.63.52.231:8000
-mxc-graph-node.mxc.com/node  http://45.63.52.231:8020
-mxc-graph-node.mxc.com/ipfs  http://45.63.52.231:5001
