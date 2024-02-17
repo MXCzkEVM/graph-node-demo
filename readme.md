@@ -7,8 +7,8 @@ This guide will walk you through the setup and associations necessary to create 
 Below is the mapping of nodes to their respective web services:
 
 ## Graph Domain
-MXCZkEVM Mainnet mxc-graph.mxc.com
-Wannsee Testnet mxc-graph-node.mxc.com
+- MXCZkEVM Mainnet mxc-graph.mxc.com
+- Wannsee Testnet mxc-graph-node.mxc.com
 
 ## Deploy
 
@@ -16,6 +16,7 @@ Wannsee Testnet mxc-graph-node.mxc.com
 
 2. graph deploy <graph-name> --ipfs http://mxc-graph-node.mxc.com:5001 --node http://mxc-graph-node.mxc.com:8020
 
+## Endpoints
 - **Admin Node**: 
     - Web UI: [Admin](http://mxc-graph-node.mxc.com)
     - Service endpoint: mxc-graph-node.mxc.com:8020
